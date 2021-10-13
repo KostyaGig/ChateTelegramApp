@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/music_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/black"
+        android:src="@drawable/ic_headphones"
+        app:layout_constraintBottom_toTopOf="@id/create_group_btn"
+        app:layout_constraintEnd_toEndOf="@id/change_image_btn"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="14dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/create_group_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/color_purple"
+        android:src="@drawable/ic_group"
+        app:layout_constraintBottom_toTopOf="@id/users_btn"
+        app:layout_constraintEnd_toEndOf="@id/change_image_btn"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="14dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/users_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/white"
+        android:src="@drawable/ic_person"
+        app:layout_constraintBottom_toTopOf="@id/synchronize_user_btn"
+        app:layout_constraintEnd_toEndOf="@id/change_image_btn"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="14dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/synchronize_user_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:src="@drawable/ic_sync"
+        app:layout_constraintBottom_toTopOf="@id/save_user_btn"
+        app:layout_constraintEnd_toEndOf="@id/change_name_btn"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="14dp"
+        android:visibility="visible"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/save_user_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:src="@drawable/ic_save"
+        app:layout_constraintBottom_toTopOf="@id/change_name_btn"
+        app:layout_constraintEnd_toEndOf="@id/change_name_btn"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="14dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/change_image_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:src="@drawable/ic_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="30dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/change_name_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:src="@drawable/ic_edit"
+        app:layout_constraintBottom_toTopOf="@id/change_image_btn"
+        app:layout_constraintEnd_toEndOf="@id/change_image_btn"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="14dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

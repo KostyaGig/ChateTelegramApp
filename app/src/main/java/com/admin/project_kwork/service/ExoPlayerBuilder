@@ -1,0 +1,12 @@
+
+private val attr AudioAttributes.Builder()
+    .setContentType(C.CONTENT_TYPE_MUSIC)
+    .setUsage(C.USAGE_MEDIA)
+    .build()
+
+private vale exoPlayer = SimpleExoPlayer().Builder(context).build().apply {
+    setAudioAttributes(attr,true)
+    setHandleAudioBecomingNoisy(true)
+}
+
+private val dsf = DefaultDataSourceFactory(context,"Telegram")
